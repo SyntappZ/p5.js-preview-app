@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="p5.preview.biscuitmanz" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+    <name>p5.js preview app</name>
+    <description>
+        just a preview app
+    </description>
+    <author email="biscuitappz@gmail.com" href="#">
+        biscuitmanz
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+    <icon src="icon.png">
+</widget>

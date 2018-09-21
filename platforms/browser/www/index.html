@@ -1,0 +1,1091 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Swiper demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="css/swiper.min.css">
+  <link rel="stylesheet" href="css/stylehav.css">
+
+  
+</head>
+<body>
+  <!-- Swiper -->
+  <div class="swiper-container swiper-container-h">
+        <div class="swiper-wrapper">
+            <div id="home" class="swiper-slide"><!----------------------------------------------------------title page (color)------------------------------------------------------------->
+
+                <div class="wrapper">
+                    <div class="titleWrap">
+                        <h1 class="colorTitle">color</h1>
+                        <h2 class="titleh2">Creating & Reading</h2>
+                    </div>
+
+                    <div class="logo-div">
+                        <img class="Logo" src="img/p5js.png" alt="logo">
+                    </div>
+
+                    <div class="swipeLeft">
+                      <h1>&uarr; tap or swipe &rarr;</h1>
+                    </div>
+                </div><!-------------wrapper----------------->
+
+        </div>
+       
+        <div id="alpha" class="swiper-slide"><!---------------------------------------------------------------------------------alpha()------------------------------------------------------>
+
+            <div class="swiper-container swiper-container-v"><!----swiper vertical (alpha)---->
+                <div class="swiper-wrapper"><!-----swiper wrapper---------------->
+                  <div class="swiper-slide"><!--------v-slide 1----------->
+                    <div  class="wrapper">
+                        <div class="titleWrap">
+                            <h1 class="colorTitle">alpha()</h1>
+                            <h2 class="titleh2">Creating & Reading</h2>
+                        </div>
+    
+                        <div class="swipeImg">
+                            <img class="Logo" src="img/information.png" alt="swipelogo">
+                        </div>
+    
+                        <div class="swipeLeft">
+                          <h1> &darr; swipe &rarr;</h1>
+                        </div>
+                    </div><!-------------wrapper----------------->
+    
+
+                  </div>
+                  <div class="swiper-slide"><!--------v-slide 2----------->
+                    <div class="infoWrap">
+                        <div class="img">
+                            <img src="img/alpha.png" alt="alpha">
+                        </div>
+                        <div class="titleWrap">
+                            <h1 class="colorTitle">Example</h1>
+                            <h2 class="titleh2">alpha()</h2>
+                        </div>
+                        <div class="textWrap">
+                             <p>
+                               <span class="highlight">noStroke</span>();<br>
+                                 var c = <span class="highlight">color</span>(0, 126, 255, 102);<br>
+                                 <span class="highlight">fill</span>(c);<br>
+                                 <span class="highlight">rect</span>(15, 15, 35, 70);<br>
+                                 var value =  <span class="highlight">alpha</span>(c); <span class="greyout">// Sets 'value' to "102"</span><br>
+                                 <span class="highlight">fill</span>(value);<br>
+                                 <span class="highlight">rect</span>(50, 15, 35, 70);
+                             </p>
+
+                        </div><!-----text wrap------>
+                   </div>   <!-----info wrap------>
+                  
+                  
+                  
+                  </div><!-----slider------>
+                  <div class="swiper-slide"><!--------v-slide 3----------->
+                    <div class="infoWrap">
+                        <div class="textWrap">
+                                <h1>Description</h1>
+                                Extracts the alpha value from a color or pixel array.
+                               <h1>Syntax</h1> 
+                               <span class="highlight">alpha</span>(color)
+                               <h1>Parameters</h1> 
+                               <span class="underline"> color</span> <span class="highlight">p5.Color</span>|Number[]|String: p5.Color object, color components, or CSS color
+                               <h1>Returns</h1> 
+                                Number: the alpha value
+                        </div><!----text wrap---->
+        
+                    </div><!----info wrap---->
+                  
+                  </div><!-------slider----------->
+                </div><!-------slider wrapper end----------->
+                <div class="swiper-pagination swiper-pagination-v"></div>
+              </div><!----swiper vertical end---->
+        </div><!----alpha swiper end---->
+
+      <div class="swiper-slide"><!---------------------------------------------------------------blue()----------------------------------------------------------------->
+
+        <div class="swiper-container swiper-container-v"><!----swiper vertical (blue)---->
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><!-------------------- v-slide 1 (title)------------------------>
+              <div  class="wrapper">
+                  <div class="titleWrap">
+                      <h1 class="colorTitle">blue()</h1>
+                      <h2 class="titleh2">Creating & Reading</h2>
+                  </div>
+
+                  <div class="swipeImg">
+                      <img class="Logo" src="img/information.png" alt="swipelogo">
+                  </div>
+
+                  <div class="swipeLeft">
+                    <h1> &darr; swipe &rarr;</h1>
+                  </div>
+              </div><!-------------wrapper----------------->
+            </div><!------ slide end ------>
+            <div class="swiper-slide"><!-------- v-slide 2 ----------->
+              <div class="infoWrap">
+                  <div class="img">
+                      <img src="img/blue.png" alt="alpha">
+                  </div>
+                  <div class="titleWrap">
+                      <h1 class="colorTitle">Example</h1>
+                      <h2 class="titleh2">blue()</h2>
+                  </div>
+                  <div class="textWrap">
+                       <p>
+                          var c = <span class="highlight">color</span>(175, 100, 220);<span class="greyout">// Define color 'c'</span><br>
+                          <span class="highlight"> fill</span>(c);<span class="greyout">// Use color variable 'c' as fill color</span> <br>
+                          <span class="highlight"> rect</span>(15, 20, 35, 60);<span class="greyout">// Draw left rectangle</span> <br>
+                          var blueValue = <span class="highlight">blue</span> (c);<span class="greyout">// Get blue in 'c'</span> <br>
+                          <span class="highlight">print</span>(blueValue); <span class="greyout">// Prints "220.0"</span><br>
+                          <span class="highlight">fill</span>(0, 0, blueValue);<span class="greyout">// Use 'blueValue' in new fill</span> <br>
+                          <span class="highlight"> rect</span>(50, 20, 35, 60);<span class="greyout">// Draw right rectangle</span> 
+                       </p>
+
+                  </div><!---- text wrap ---->
+            </div> <!---- info wrap ---->
+            </div><!---- slider end ---->
+            <div class="swiper-slide"><!-------- v-slide 3 ----------->
+              <div class="infoWrap">
+                  <div class="textWrap">
+                          <h1>Description</h1>
+                          Extracts the blue value from a color or pixel array.
+                         <h1>Syntax</h1> 
+                         <span class="highlight">blue</span>(color)
+                         <h1>Parameters</h1> 
+                         <span class="underline"> color</span> <span class="highlight">p5.Color</span>|Number[]|String: p5.Color object, color components, or CSS color
+                         <h1>Returns</h1> 
+                          Number: the blue value
+                  </div><!----text wrap---->
+  
+              </div><!----info wrap---->
+            
+
+            </div><!-----swiper slider end-------->
+            
+          </div><!-------slider wrapper end----------->
+          <div class="swiper-pagination swiper-pagination-v"></div>
+        </div><!----swiper vertical end---->
+      </div><!----blue swiper end---->
+
+      <div class="swiper-slide"><!------------------------------------------------------------------------brightness()------------------------------------------------------------->
+
+        <div class="swiper-container swiper-container-v"><!----swiper vertical (brightness)---->
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><!--------v-slide 1----------->
+                <div  class="wrapper">
+                  <div class="titleWrap">
+                      <h1 class="colorTitle">brightness()</h1>
+                      <h2 class="titleh2">Creating & Reading</h2>
+                  </div>
+
+                  <div class="swipeImg">
+                      <img class="Logo" src="img/information.png" alt="swipelogo">
+                  </div>
+
+                  <div class="swipeLeft">
+                    <h1> &darr; swipe &rarr;</h1>
+                  </div>
+              </div><!-------------wrapper----------------->
+
+              </div>
+              <div class="swiper-slide"><!--------v-slide 2----------->
+                <div class="infoWrap">
+                  <div class="img">
+                      <img src="img/brightness.png" alt="alpha">
+                  </div>
+                  <div class="titleWrap">
+                      <h1 class="colorTitle">Example</h1>
+                      <h2 class="titleh2">brightness()</h2>
+                  </div>
+                  <div class="textWrap">
+                       <p>
+                          <span class="highlight">noStroke</span>();<br>
+                          <span class="highlight">colorMode</span>(HSB, 255);<br>
+                          var c = <span class="highlight">color</span>(0, 126, 255);<br>
+                          <span class="highlight"> fill</span>(c);<span class="greyout">// Use color variable 'c' as fill color</span> <br>
+                          <span class="highlight"> rect</span>(15, 20, 35, 60);<span class="greyout">// Draw left rectangle</span> <br>
+                          var Value = <span class="highlight">brightness</span> (c);<span class="greyout">// Sets 'value' to "255"</span> <br>
+                          <span class="highlight">fill</span>(Value);<br>
+                          <span class="highlight"> rect</span>(50, 20, 35, 60);
+                       </p>
+
+                  </div><!---- text wrap ---->
+            </div> <!---- info wrap ---->
+              </div>
+              <div class="swiper-slide"><!--------v-slide 3----------->
+                <div class="infoWrap">
+                    <div class="textWrap">
+                            <h1>Description</h1>
+                            Extracts the HSB brightness value from a color or pixel array.
+                           <h1>Syntax</h1> 
+                           <span class="highlight">brightness</span>(color)
+                           <h1>Parameters</h1> 
+                           <span class="underline"> color</span> <span class="highlight">p5.Color</span>:|Number[]|String: p5.Color object, color components, or CSS color
+                           <h1>Returns</h1> 
+                            Number: the brightness value
+                    </div><!----text wrap---->
+    
+                </div><!----info wrap---->
+              
+              </div>
+            </div><!-------slider wrapper end----------->
+            <div class="swiper-pagination swiper-pagination-v"></div>
+          </div><!----swiper vertical end---->
+       </div><!----brightness end---->
+
+       <div class="swiper-slide"><!---------------------------------------------------------------color()----------------------------------------------------------------->
+        
+                <div class="swiper-container swiper-container-v"><!----swiper vertical (color)---->
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide"><!-------------------- v-slide 1 (title)------------------------>
+                      <div  class="wrapper">
+                          <div class="titleWrap">
+                              <h1 class="colorTitle">color()</h1>
+                              <h2 class="titleh2">Creating & Reading</h2>
+                          </div>
+        
+                          <div class="swipeImg">
+                              <img class="Logo" src="img/information.png" alt="swipelogo">
+                          </div>
+        
+                          <div class="swipeLeft">
+                            <h1> &darr; swipe &rarr;</h1>
+                          </div>
+                      </div><!-------------wrapper----------------->
+                    </div><!------ v-slide end ------>
+
+                    <div class="swiper-slide"><!-------- v-slide 2 ----------->
+                      <div class="infoWrap">
+                          <div class="img">
+                              <img src="img/color1.png" alt="alpha">
+                          </div>
+                          <div class="titleWrap">
+                              <h1 class="colorTitle">Example</h1>
+                              <h2 class="titleh2">color()</h2>
+                          </div>
+                          <div class="textWrap">
+                               <p>
+                                  var c = <span class="highlight">color</span>(255, 204, 0);<span class="greyout">// Define color 'c'</span><br>
+                                  <span class="highlight"> fill</span>(c);<span class="greyout">// Use color variable 'c' as fill color</span> <br>
+                                 <span class="highlight">noStroke</span>();<span class="greyout">// Don't draw a stroke around shapes</span><br>
+                                  <span class="highlight"> rect</span>(30, 20, 55, 55);<span class="greyout">// Draw right rectangle</span> 
+                               </p>
+        
+                          </div><!---- text wrap ---->
+                    </div> <!---- info wrap ---->
+                    </div><!---- v-slide end ---->
+
+                    <div class="swiper-slide"><!-------- v-slide 3 ----------->
+                      <div class="infoWrap">
+                          <div class="img">
+                              <img src="img/color2.png" alt="alpha">
+                          </div>
+                          <div class="titleWrap">
+                              <h1 class="colorTitle">Example 2</h1>
+                              <h2 class="titleh2">color()</h2>
+                          </div>
+                          <div class="textWrap">
+                               <p>
+                                  <span class="greyout"> // Named SVG & CSS colors may be used,</span><br>
+                                  var c = <span class="highlight">color</span>('magenta');<br>
+                                  <span class="highlight"> fill</span>(c);<span class="greyout">// Use 'c' as fill color</span> <br>
+                                 <span class="highlight">noStroke</span>();<span class="greyout">// Don't draw a stroke around shapes</span><br>
+                                  <span class="highlight"> rect</span>(20, 20, 60, 60);<span class="greyout">// Draw rectangle</span> 
+                               </p>
+        
+                          </div><!---- text wrap ---->
+                    </div> <!---- info wrap ---->
+                    </div><!---- v-slide end ---->
+
+                    <div class="swiper-slide"><!-------- v-slide 4 ----------->
+                      <div class="infoWrap">
+                          <div class="img">
+                              <img src="img/color3.png" alt="alpha">
+                          </div>
+                          <div class="titleWrap">
+                              <h1 class="colorTitle">Example 3</h1>
+                              <h2 class="titleh2">color()</h2>
+                          </div>
+                          <div class="textWrap">
+                               <p>
+                                  <span class="greyout">// RGB and RGBA color strings are also supported:<br>
+                                    // these all set to the same color (solid blue)</span><br>
+                                    var c;<br>
+                                    <span class="highlight"> noStroke</span>(); <span class="greyout">// Don't draw a stroke around shapes</span><br>
+                                    c = <span class="highlight">color</span>(<span class="highlight">'rgb(0,0,255)'</span>);<br>
+                                    <span class="highlight">  fill</span>(c);<span class="greyout"> // Use 'c' as fill color</span><br>
+                                    <span class="highlight">rect</span>(10, 10, 35, 35);<span class="greyout"> // Draw rectangle</span><br><br>
+
+                                    c = <span class="highlight">color</span>(<span class="highlight">'rgb(0%,0%,100%)'</span>);<br>
+                                    <span class="highlight">  fill</span>(c);<span class="greyout"> // Use updated 'c' as fill color</span><br>
+                                    <span class="highlight">rect</span>(55, 10, 35, 35);<span class="greyout"> // Draw rectangle</span><br><br>
+
+                                    c = <span class="highlight">color</span>(<span class="highlight">'rgb(0,0,255, 1)'</span>);<br>
+                                    <span class="highlight">  fill</span>(c);<span class="greyout"> // Use 'c' as fill color</span><br>
+                                    <span class="highlight">rect</span>(10, 55, 35, 35);<span class="greyout"> // Draw rectangle</span><br><br>
+
+                                    c = <span class="highlight">color</span>(<span class="highlight">'rgb(0%,0%,100%, 1)'</span>);<br>
+                                    <span class="highlight">  fill</span>(c);<span class="greyout"> // Use updated 'c' as fill color</span><br>
+                                    <span class="highlight">rect</span>(55, 55, 35, 35);<span class="greyout"> // Draw rectangle</span>
+                               </p>
+        
+                          </div><!---- text wrap ---->
+                    </div> <!---- info wrap ---->
+                    </div><!---- v-slide end ---->
+
+                    <div class="swiper-slide"><!-------- v-slide 5 ----------->
+                      <div class="infoWrap">
+                          <div class="titleWrap">
+                              <h1 class="colorTitle">Description</h1>
+                              <h2 class="titleh2">color()</h2>
+                          </div>
+                          <div class="textWrap">
+                              Creates colors for storing in variables of the color datatype. The parameters are interpreted as RGB or HSB values depending on the current colorMode().
+                               The default mode is RGB values from 0 to 255 and, therefore, the function call color(255, 204, 0) will return a bright yellow color.<br><br> 
+
+                              Note that if only one value is provided to color(), it will be interpreted as a grayscale value. Add a second value,
+                               and it will be used for alpha transparency. When three values are specified, they are interpreted as either RGB or HSB values. 
+                               Adding a fourth value applies alpha transparency.<br><br> 
+                              
+                              If a single string argument is provided, RGB, RGBA and Hex CSS color strings and all named color strings are supported.
+                               In this case, an alpha number value as a second argument is not supported, the RGBA form should be used.
+                          </div><!----text wrap---->
+          
+                      </div><!----info wrap---->
+                    
+        
+                    </div><!----- v-slide  end -------->
+
+                   
+
+                    <div class="swiper-slide"><!-------- v-slide 6 ----------->
+                      <div class="infoWrap">
+                          <div class="titleWrap">
+                              <h1 class="colorTitle">Syntax</h1>
+                              <h2 class="titleh2">color()</h2>
+                          </div>
+                          <div class="textWrap">
+                              <span class="highlight">color</span> (gray, [alpha])<br><br>
+                              <span class="highlight">color</span>(v1, v2, v3, [alpha])<br><br>
+                              <span class="highlight">color</span>(value)<br><br>
+                              <span class="highlight">color</span>(values)<br><br>
+                              <span class="highlight">color</span>(color)
+                          </div><!----text wrap---->
+          
+                      </div><!----info wrap---->
+                    
+        
+                    </div><!----- v-slide  end -------->
+
+                    <div class="swiper-slide"><!-------- v-slide 5 ----------->
+                      <div class="infoWrap">
+                          <div class="titleWrap">
+                              <h1 class="colorTitle">Parameters</h1>
+                              <h2 class="titleh2">color()</h2>
+                          </div>
+                          <div class="textWrap">
+                            <span class="underline">gray</span>  	Number: number specifying value between white and black.<br><br>
+                            <span class="underline"> alpha</span> 	Number: alpha value relative to current color range (default is 0-255)<br><br>
+                            <span class="underline"> v1</span> 	Number: red or hue value relative to the current color range<br><br>
+                            <span class="underline">  v2</span> 	Number: green or saturation value relative to the current color range<br><br>
+                            <span class="underline">  v3</span> 	Number: blue or brightness value relative to the current color range<br><br>
+                            <span class="underline"> value</span> 	String: a color string<br><br>
+                            <span class="underline"> values</span> 	Number[]: an array containing the red,green,blue & and alpha components of the color<br><br>
+                            <span class="underline"> color</span> <span class="highlight">p5.Color</span>:
+                          </div><!----text wrap---->
+          
+                      </div><!----info wrap---->
+                    
+        
+                    </div><!----- v-slide  end -------->
+                    
+                  </div><!-------slider wrapper end----------->
+                  <div class="swiper-pagination swiper-pagination-v"></div>
+                </div><!----swiper vertical end---->
+              </div><!----color end---->
+
+              <div class="swiper-slide"><!---------------------------------------------------------------green()----------------------------------------------------------------->
+
+                <div class="swiper-container swiper-container-v"><!----swiper vertical (green)---->
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide"><!-------------------- v-slide 1 (title)------------------------>
+                      <div  class="wrapper">
+                          <div class="titleWrap">
+                              <h1 class="colorTitle">green()</h1>
+                              <h2 class="titleh2">Creating & Reading</h2>
+                          </div>
+        
+                          <div class="swipeImg">
+                              <img class="Logo" src="img/information.png" alt="swipelogo">
+                          </div>
+        
+                          <div class="swipeLeft">
+                            <h1> &darr; swipe &rarr;</h1>
+                          </div>
+                      </div><!-------------wrapper----------------->
+                    </div><!------ slide end ------>
+                    <div class="swiper-slide"><!-------- v-slide 2 ----------->
+                      <div class="infoWrap">
+                          <div class="img">
+                              <img src="img/green.png" alt="alpha">
+                          </div>
+                          <div class="titleWrap">
+                              <h1 class="colorTitle">Example</h1>
+                              <h2 class="titleh2">green()</h2>
+                          </div>
+                          <div class="textWrap">
+                               <p>
+                                  var c = <span class="highlight">color</span>(20, 75, 200);<span class="greyout">// Define color 'c'</span><br>
+                                  <span class="highlight"> fill</span>(c);<span class="greyout">// Use color variable 'c' as fill color</span> <br>
+                                  <span class="highlight"> rect</span>(15, 20, 35, 60);<span class="greyout">// Draw left rectangle</span> <br>
+                                  var greenValue = <span class="highlight">green</span> (c);<span class="greyout">// Get green in 'c'</span> <br>
+                                  <span class="highlight">print</span>(greenValue); <span class="greyout">// Prints "75.0"</span><br>
+                                  <span class="highlight">fill</span>(0, greenValue, 0);<span class="greyout">// Use 'greenValue' in new fill</span> <br>
+                                  <span class="highlight"> rect</span>(50, 20, 35, 60);<span class="greyout">// Draw right rectangle</span> 
+                               </p>
+        
+                          </div><!---- text wrap ---->
+                    </div> <!---- info wrap ---->
+                    </div><!---- slider end ---->
+                    <div class="swiper-slide"><!-------- v-slide 3 ----------->
+                      <div class="infoWrap">
+                          <div class="textWrap">
+                                  <h1>Description</h1>
+                                  Extracts the green value from a color or pixel array.
+                                 <h1>Syntax</h1> 
+                                 <span class="highlight">green</span>(color)
+                                 <h1>Parameters</h1> 
+                           <span class="underline"> color</span> <span class="highlight">p5.Color</span>|Number[]|String: p5.Color object, color components, or CSS color
+                                 <h1>Returns</h1> 
+                                  Number: the green value
+                          </div><!----text wrap---->
+          
+                      </div><!----info wrap---->
+                    
+        
+                    </div><!-----swiper slider end-------->
+                  </div><!-------slider wrapper end----------->
+                  <div class="swiper-pagination swiper-pagination-v"></div>
+                </div><!----swiper vertical end---->
+              </div><!---- green end---->
+
+              <div class="swiper-slide"><!---------------------------------------------------------------hue()----------------------------------------------------------------->
+
+                <div class="swiper-container swiper-container-v"><!----swiper vertical (hue)---->
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide"><!-------------------- v-slide 1 (title)------------------------>
+                      <div  class="wrapper">
+                          <div class="titleWrap">
+                              <h1 class="colorTitle">hue()</h1>
+                              <h2 class="titleh2">Creating & Reading</h2>
+                          </div>
+        
+                          <div class="swipeImg">
+                              <img class="Logo" src="img/information.png" alt="swipelogo">
+                          </div>
+        
+                          <div class="swipeLeft">
+                            <h1> &darr; swipe &rarr;</h1>
+                          </div>
+                      </div><!-------------wrapper----------------->
+                    </div><!------ slide end ------>
+                    <div class="swiper-slide"><!-------- v-slide 2 ----------->
+                      <div class="infoWrap">
+                          <div class="img">
+                              <img src="img/hue.png" alt="alpha">
+                          </div>
+                          <div class="titleWrap">
+                              <h1 class="colorTitle">Example</h1>
+                              <h2 class="titleh2">hue()</h2>
+                          </div>
+                          <div class="textWrap">
+                               <p>
+                                  <span class="highlight">noStroke</span>();<br>
+                                  <span class="highlight">colorMode</span>(HSB, 255);<br>
+                                  var c = <span class="highlight">color</span>(0, 126, 255);<br>
+                                  <span class="highlight"> fill</span>(c);
+                                  <span class="highlight"> rect</span>(15, 20, 35, 60);
+                                  var Value = <span class="highlight">hue</span> (c);<span class="greyout">// Sets 'value' to "0"</span> <br>
+                                  <span class="highlight">fill</span>(Value);<br>
+                                  <span class="highlight"> rect</span>(50, 20, 35, 60);
+                               </p>
+        
+                          </div><!---- text wrap ---->
+                    </div> <!---- info wrap ---->
+                    </div><!---- slider end ---->
+
+                    <div class="swiper-slide"><!-------- v-slide 3 ----------->
+                      <div class="infoWrap">
+                          <div class="titleWrap">
+                              <h1 class="colorTitle">Description</h1>
+                              <h2 class="titleh2">hue()</h2>
+                          </div>
+                          <div class="textWrap">
+                              Extracts the hue value from a color or pixel array.<br><br>
+
+                              Hue exists in both HSB and HSL. This function will return the HSB-normalized hue when supplied with an HSB color object (or when supplied with a pixel 
+                              array while the color mode is HSB),
+                              but will default to the HSL-normalized hue otherwise. (The values will only be different if the maximum hue setting for each system is different.)
+                          </div><!----text wrap---->
+          
+                      </div><!----info wrap---->
+                    
+        
+                    </div><!----- v-slide  end -------->
+
+
+                    <div class="swiper-slide"><!-------- v-slide 4 ----------->
+                      <div class="infoWrap">
+                          <div class="textWrap">
+                                 <h1>Syntax</h1> 
+                                 <span class="highlight">hue</span>(color)
+                                 <h1>Parameters</h1> 
+                           <span class="underline"> color</span> <span class="highlight">p5.Color</span>|Number[]|String: p5.Color object, color components, or CSS color
+                                 <h1>Returns</h1> 
+                                  Number: the hue
+                          </div><!----text wrap---->
+          
+                      </div><!----info wrap---->
+                    
+        
+                    </div><!-----swiper slider end-------->
+                  </div><!-------slider wrapper end----------->
+                  <div class="swiper-pagination swiper-pagination-v"></div>
+                </div><!----swiper vertical end---->
+              </div><!---- hue end---->
+
+              <div class="swiper-slide"><!---------------------------------------------------------------lerpColor()----------------------------------------------------------------->
+
+                <div class="swiper-container swiper-container-v"><!----swiper vertical (lerpColor)---->
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide"><!-------------------- v-slide 1 (title)------------------------>
+                      <div  class="wrapper">
+                          <div class="titleWrap">
+                              <h1 class="colorTitle">lerpColor()</h1>
+                              <h2 class="titleh2">Creating & Reading</h2>
+                          </div>
+        
+                          <div class="swipeImg">
+                              <img class="Logo" src="img/information.png" alt="swipelogo">
+                          </div>
+        
+                          <div class="swipeLeft">
+                            <h1> &darr; swipe &rarr;</h1>    
+                          </div>
+                      </div><!-------------wrapper----------------->
+                    </div><!------ slide end ------>
+                    <div class="swiper-slide"><!-------- v-slide 2 ----------->
+                      <div class="infoWrap">
+                          <div class="img">
+                              <img src="img/lerpcolor.png" alt="alpha">
+                          </div>
+                          <div class="titleWrap">
+                              <h1 class="colorTitle">Example</h1>
+                              <h2 class="titleh2">lerpColor()</h2>
+                          </div>
+                          <div class="textWrap">
+                               <p>
+                                  <span class="highlight">colorMode</span>(RGB);<br>
+                                  <span class="highlight">stroke</span>(255);<br>
+                                  <span class="highlight">background</span>(51);<br>
+                                  var from =<span class="highlight">color</span>(218, 165, 32);<br>
+                                  var to = <span class="highlight">color</span>(72, 61, 139);<br>
+                                  <span class="highlight">colorMode</span>(RGB); <span class="greyout">// Try changing to HSB.</span><br>
+                                  var interA = <span class="highlight">lerpColor</span>(from, to, 0.33);<br>
+                                  var interB = <span class="highlight">lerpColor</span>(from, to, 0.66);<br>
+                                  <span class="highlight"> fill</span>(from);<br>
+                                  <span class="highlight"> rect</span>(10, 20, 20, 60);<br>
+                                  <span class="highlight"> fill</span>(interA);<br>
+                                  <span class="highlight"> rect</span>(30, 20, 20, 60);<br>
+                                  <span class="highlight"> fill</span>(interB);<br>
+                                  <span class="highlight"> rect</span>(50, 20, 20, 60);<br>
+                                  <span class="highlight"> fill</span>(to);<br>
+                                  <span class="highlight">rect</span>(70, 20, 20, 60);
+                               </p>
+        
+                          </div><!---- text wrap ---->
+                    </div> <!---- info wrap ---->
+                    </div><!---- slider end ---->
+
+                      <div class="swiper-slide"><!-------- v-slide 3 ----------->
+                        <div class="infoWrap">
+                            <div class="titleWrap">
+                                <h1 class="colorTitle">Description</h1>
+                                <h2 class="titleh2">lerpColor()</h2>
+                            </div>
+                            <div class="textWrap">
+                              <p>
+                                 Blends two colors to find a third color somewhere between them. The amt parameter is the amount to interpolate between the two values where 0.0
+                                 equal to the first color, 0.1 is very near the first color, 0.5 is halfway in between, etc. An amount below 0 will be treated as 0. Likewise, 
+                                 amounts above 1 will be capped at 1. This is different from the behavior of lerp(), but necessary because otherwise numbers outside the range will
+                                  produce strange and unexpected colors.<br><br> 
+                                  The way that colours are interpolated depends on the current color mode.
+                              </p>
+                            </div><!----text wrap---->
+            
+                        </div><!----info wrap---->
+                      
+          
+                      </div><!----- v-slide  end -------->
+
+
+                    <div class="swiper-slide"><!-------- v-slide 4 ----------->
+                      <div class="infoWrap">
+                          <div class="textWrap">
+                                 <h1>Syntax</h1> 
+                                 <span class="highlight">lerpColor</span>(c1, c2, amt)
+                                 <h1>Parameters</h1> 
+                           <span class="underline"> c1</span> <span class="highlight">p5.color</span>:interpolate from this color<br>
+                           <span class="underline"> c2</span> <span class="highlight">p5.color</span>:interpolate to this color<br>
+                           <span class="underline"> amt</span> Number: number between 0 and 1
+
+                                 <h1>Returns</h1> 
+                                  p5.Color: interpolated color
+                          </div><!----text wrap---->
+          
+                      </div><!----info wrap---->
+                    
+        
+                    </div><!-----swiper slider end-------->
+                  </div><!-------slider wrapper end----------->
+                  <div class="swiper-pagination swiper-pagination-v"></div>
+                </div><!----swiper vertical end---->
+              </div><!---- lerpColor end---->
+
+              <div class="swiper-slide"><!---------------------------------------------------------------lightness()----------------------------------------------------------------->
+
+                <div class="swiper-container swiper-container-v"><!----swiper vertical (lightness)---->
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide"><!-------------------- v-slide 1 (title)------------------------>
+                      <div  class="wrapper">
+                          <div class="titleWrap">
+                              <h1 class="colorTitle">lightness()</h1>
+                              <h2 class="titleh2">Creating & Reading</h2>
+                          </div>
+        
+                          <div class="swipeImg">
+                              <img class="Logo" src="img/information.png" alt="swipelogo">
+                          </div>
+        
+                          <div class="swipeLeft">
+                            <h1> &darr; swipe &rarr;</h1>
+                          </div>
+                      </div><!-------------wrapper----------------->
+                    </div><!------ slide end ------>
+                    <div class="swiper-slide"><!-------- v-slide 2 ----------->
+                      <div class="infoWrap">
+                          <div class="img">
+                              <img src="img/lightness.png" alt="alpha">
+                          </div>
+                          <div class="titleWrap">
+                              <h1 class="colorTitle">Example</h1>
+                              <h2 class="titleh2">lightness()</h2>
+                          </div>
+                          <div class="textWrap">
+                              <p>
+                                 <span class="highlight">noStroke</span>();<br>
+                                 <span class="highlight">colorMode</span>(HSL);<br>
+                                 var c = <span class="highlight">color</span>(156, 100, 50, 1);<br>
+                                 <span class="highlight"> fill</span>(c);
+                                 <span class="highlight"> rect</span>(15, 20, 35, 60);
+                                 var Value = <span class="highlight">lightness</span> (c);<span class="greyout">// Sets 'value' to "50"</span> <br>
+                                 <span class="highlight">fill</span>(Value);<br>
+                                 <span class="highlight"> rect</span>(50, 20, 35, 60);
+                              </p>
+       
+                         </div><!---- text wrap ---->
+                    </div> <!---- info wrap ---->
+                    </div><!---- slider end ---->
+                    <div class="swiper-slide"><!-------- v-slide 3 ----------->
+                      <div class="infoWrap">
+                          <div class="textWrap">
+                                  <h1>Description</h1>
+                                  Extracts the HSL lightness value from a color or pixel array.
+                                 <h1>Syntax</h1> 
+                                 <span class="highlight">lightness</span>(color)
+                                 <h1>Parameters</h1> 
+                           <span class="underline"> color</span> <span class="highlight">p5.Color</span>|Number[]|String: p5.Color object, color components, or CSS color
+                                 <h1>Returns</h1> 
+                                  Number: the lightness
+                          </div><!----text wrap---->
+          
+                      </div><!----info wrap---->
+                    
+        
+                    </div><!-----swiper slider end-------->
+                  </div><!-------slider wrapper end----------->
+                  <div class="swiper-pagination swiper-pagination-v"></div>
+                </div><!----swiper vertical end---->
+              </div><!---- lightness end---->
+
+              <div class="swiper-slide"><!---------------------------------------------------------------red()----------------------------------------------------------------->
+
+                <div class="swiper-container swiper-container-v"><!----swiper vertical (blue)---->
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide"><!-------------------- v-slide 1 (title)------------------------>
+                      <div  class="wrapper">
+                          <div class="titleWrap">
+                              <h1 class="colorTitle">red()</h1>
+                              <h2 class="titleh2">Creating & Reading</h2>
+                          </div>
+        
+                          <div class="swipeImg">
+                              <img class="Logo" src="img/information.png" alt="swipelogo">
+                          </div>
+        
+                          <div class="swipeLeft">
+                            <h1> &darr; swipe &rarr;</h1>
+                          </div>
+                      </div><!-------------wrapper----------------->
+                    </div><!------ slide end ------>
+                    <div class="swiper-slide"><!-------- v-slide 2 ----------->
+                      <div class="infoWrap">
+                          <div class="img">
+                              <img src="img/red.png" alt="alpha">
+                          </div>
+                          <div class="titleWrap">
+                              <h1 class="colorTitle">Example</h1>
+                              <h2 class="titleh2">red()</h2>
+                          </div>
+                          <div class="textWrap">
+                               <p>
+                                  var c = <span class="highlight">color</span>(255, 204, 0);<span class="greyout">// Define color 'c'</span><br>
+                                  <span class="highlight"> fill</span>(c);<span class="greyout">// Use color variable 'c' as fill color</span> <br>
+                                  <span class="highlight"> rect</span>(15, 20, 35, 60);<span class="greyout">// Draw left rectangle</span> <br><br>
+
+                                  var redValue = <span class="highlight">red</span> (c);<span class="greyout">// Get red in 'c'</span> <br>
+                                  <span class="highlight">print</span>(redValue); <span class="greyout">// Prints "75.0"</span><br>
+                                  <span class="highlight">fill</span>(redValue, 0, 0);<span class="greyout">// Use 'redValue' in new fill</span> <br>
+                                  <span class="highlight"> rect</span>(50, 20, 35, 60);<span class="greyout">// Draw right rectangle</span> 
+                               </p>
+        
+                          </div><!---- text wrap ---->
+                    </div> <!---- info wrap ---->
+                    </div><!---- slider end ---->
+                    <div class="swiper-slide"><!-------- v-slide 3 ----------->
+                      <div class="infoWrap">
+                          <div class="textWrap">
+                                  <h1>Description</h1>
+                                  Extracts the red value from a color or pixel array.
+                                 <h1>Syntax</h1> 
+                                 <span class="highlight">red</span>(color)
+                                 <h1>Parameters</h1> 
+                           <span class="underline"> color</span> <span class="highlight">p5.Color</span>|Number[]|String: p5.Color object, color components, or CSS color
+                                 <h1>Returns</h1> 
+                                  Number: the red value
+                          </div><!----text wrap---->
+          
+                      </div><!----info wrap---->
+                    
+        
+                    </div><!-----swiper slider end-------->
+                  </div><!-------slider wrapper end----------->
+                  <div class="swiper-pagination swiper-pagination-v"></div>
+                </div><!----swiper vertical end---->
+              </div><!---- red end---->
+
+              <div class="swiper-slide"><!---------------------------------------------------------------saturation()----------------------------------------------------------------->
+
+                <div class="swiper-container swiper-container-v"><!----swiper vertical (blue)---->
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide"><!-------------------- v-slide 1 (title)------------------------>
+                      <div  class="wrapper">
+                          <div class="titleWrap">
+                              <h1 class="colorTitle">saturation()</h1>
+                              <h2 class="titleh2">Creating & Reading</h2>
+                          </div>
+        
+                          <div class="swipeImg">
+                              <img class="Logo" src="img/information.png" alt="swipelogo">
+                          </div>
+        
+                          <div class="swipeLeft">
+                            <h1> &darr; swipe &rarr;</h1>
+                          </div>
+                      </div><!-------------wrapper----------------->
+                    </div><!------ slide end ------>
+                    <div class="swiper-slide"><!-------- v-slide 2 ----------->
+                      <div class="infoWrap">
+                          <div class="img">
+                              <img src="img/saturation.png" alt="alpha">
+                          </div>
+                          <div class="titleWrap">
+                              <h1 class="colorTitle">Example</h1>
+                              <h2 class="titleh2">saturation()</h2>
+                          </div>
+                          <div class="textWrap">
+                              <p>
+                                 <span class="highlight">noStroke</span>();<br>
+                                 <span class="highlight">colorMode</span>(HSB, 255);<br>
+                                 var c = <span class="highlight">color</span>(0, 126, 255);<br>
+                                 <span class="highlight"> fill</span>(c);
+                                 <span class="highlight"> rect</span>(15, 20, 35, 60);
+                                 var Value = <span class="highlight">saturation</span> (c);<span class="greyout">// Sets 'value' to "126"</span> <br>
+                                 <span class="highlight">fill</span>(Value);<br>
+                                 <span class="highlight"> rect</span>(50, 20, 35, 60);
+                              </p>
+       
+                         </div><!---- text wrap ---->
+                    </div> <!---- info wrap ---->
+                    </div><!---- slider end ---->
+
+                    <div class="swiper-slide"><!-------- v-slide 3 ----------->
+                      <div class="infoWrap">
+                          <div class="titleWrap">
+                              <h1 class="colorTitle">Description</h1>
+                              <h2 class="titleh2">saturation()</h2>
+                          </div>
+                          <div class="textWrap">
+                            <p>
+                                Extracts the saturation value from a color or pixel array.<br><br>
+
+                                Saturation is scaled differently in HSB and HSL. This function will return the HSB saturation when supplied with an HSB color object
+                                 (or when supplied with a pixel array while the color mode is HSB), but will default to the HSL saturation otherwise.
+                            </p>
+                          </div><!----text wrap---->
+          
+                      </div><!----info wrap---->
+                    
+        
+                    </div><!----- v-slide  end -------->
+
+
+                    <div class="swiper-slide"><!-------- v-slide 4 ----------->
+                      <div class="infoWrap">
+                          <div class="textWrap">
+                                
+                                 <h1>Syntax</h1> 
+                                 <span class="highlight">saturation</span>(color)
+                                 <h1>Parameters</h1> 
+                           <span class="underline"> color</span> <span class="highlight">p5.Color</span>|Number[]|String: p5.Color object, color components, or CSS color
+                                 <h1>Returns</h1> 
+                                  Number: the saturation value
+                          </div><!----text wrap---->
+          
+                      </div><!----info wrap---->
+                    
+        
+                    </div><!-----swiper slider end-------->
+                  </div><!-------slider wrapper end----------->
+                  <div class="swiper-pagination swiper-pagination-v"></div>
+                </div><!----swiper vertical end---->
+              </div><!---- saturation end---->
+
+              <div class="swiper-slide"><!---------------------------------------------------------------p5.color----------------------------------------------------------------->
+
+                <div class="swiper-container swiper-container-v"><!----swiper vertical (blue)---->
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide"><!-------------------- v-slide 1 (title)------------------------>
+                      <div  class="wrapper">
+                          <div class="titleWrap">
+                              <h1 class="colorTitle">p5.Color</h1>
+                              <h2 class="titleh2">Creating & Reading</h2>
+                          </div>
+        
+                          <div class="swipeImg">
+                              <img class="Logo" src="img/information.png" alt="swipelogo">
+                          </div>
+        
+                          <div class="swipeLeft">
+                            <h1> &darr; swipe &rarr;</h1>
+                          </div>
+                      </div><!-------------wrapper----------------->
+                    </div><!------ slide end ------>
+                    <div class="swiper-slide"><!-------- v-slide 2 ----------->
+                      <div class="infoWrap">
+                  
+                          <div class="titleWrap">
+                              <h1 class="colorTitle">Description</h1>
+                              <h2 class="titleh2">p5.Color</h2>
+                          </div>
+                          <div class="textWrap">
+                               <p>
+                                  Each color stores the color mode and level maxes that applied at the time of its construction. 
+                                  These are used to interpret the input arguments (at construction and later for that instance of color)
+                                   and to format the output e.g. when saturation() is requested.<br><br>
+
+                                      Internally we store an array representing the ideal RGBA values in floating point form, 
+                                      normalized from 0 to 1. From this we calculate the closest screen color (RGBA levels from 0 to 255) and expose this to the renderer.<br><br>
+
+                                      We also cache normalized, floating point components of the color in various representations as they are calculated. 
+                                      This is done to prevent repeating a conversion that has already been performed.
+                               </p>
+        
+                          </div><!---- text wrap ---->
+                    </div> <!---- info wrap ---->
+                    </div><!---- slide end ---->
+                    <div class="swiper-slide"><!-------- v-slide 3 ----------->
+                      <div class="infoWrap">
+                          <div class="titleWrap">
+                              <h1 class="colorTitle">methods</h1>
+                              <h2 class="titleh2">toString()</h2>
+                          </div>
+                          <div class="textWrap">
+                             <h1>Description</h1>
+                             This function returns the color formatted as a string. 
+                             This can be useful for debugging, or for using p5.js with other libraries.
+                          </div><!----text wrap---->
+                          <div class="textWrap">
+                            <h1>Example</h1>
+                              var myColor;
+                              function<span class="highlight">setup</span>() {<br>
+                                <span class="highlight"> createCanvas</span>(200, 200);<br>
+                                    <span class="highlight">stroke</span>(255);<br>
+                                myColor = <span class="highlight">color</span>(100, 100, 250);<br>
+                                <span class="highlight"> fill</span>(myColor);<br>
+                              }<br><br>
+                              
+                              function <span class="highlight">draw</span>() {<br>
+                                <span class="highlight"> text</span>(myColor.<span class="highlight">toString()</span>, 10, 10);<br>
+                                <span class="highlight">text</span>(myColor.<span class="highlight">toString()</span>('#rrggbb'), 10, 95);<br>
+                                <span class="highlight"> text</span>(myColor.<span class="highlight">toString()</span>('rgba%'), 10, 180);<br>
+                              }
+                          </div><!----text wrap---->
+          
+                      </div><!----info wrap---->
+                    
+        
+                    </div><!-----swiper slider end-------->
+
+                    <div class="swiper-slide"><!-------- v-slide 2 ----------->
+                      <div class="infoWrap">
+                  
+                          <div class="titleWrap">
+                              <h1 class="colorTitle">methods</h1>
+                              <h2 class="titleh2">toString()</h2>
+                          </div>
+                          <div class="textWrap">
+                               
+                                  <H1>Syntax</H1> 
+                                  <p>toString([format])</p>
+                                  <h1>Parameters</h1>
+                                  <p>
+                                      <span class="underline"> format</span>	String: How the color string will be formatted. Leaving this empty formats the string as rgba(r, g, b, a).
+                                     '#rgb' '#rgba' '#rrggbb' and '#rrggbbaa' format as hexadecimal color codes. 'rgb' 'hsb' and 'hsl' return the color formatted in the specified
+                                      color mode. 'rgba' 'hsba' and 'hsla' are the same as above but with alpha channels. 'rgb%' 'hsb%' 'hsl%' 'rgba%' 'hsba%' and 'hsla%' 
+                                      format as percentages.</p>
+
+                                     <h1>Returns</h1>
+                                     <p>String: the formatted string</p>
+                                      
+                          </div><!---- text wrap ---->
+                    </div> <!---- info wrap ---->
+                    </div><!---- slide end ---->
+
+                  </div><!-------slider wrapper end----------->
+                  <div class="swiper-pagination swiper-pagination-v"></div>
+                </div><!----swiper vertical end---->
+              </div><!---- p5.color end---->
+
+              <div class="swiper-slide"><!---------------------------------------------------------------saturation()----------------------------------------------------------------->
+
+                <div class="swiper-container swiper-container-v"><!----swiper vertical (blue)---->
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide"><!-------------------- v-slide 1 (title)------------------------>
+                      <div  class="wrapper">
+                          <div class="titleWrap">
+                              <h1 class="colorTitle">P5.JS Preview App</h1>
+                              <h2 class="titleh2">Created By BiscuitmanZ</h2>
+                          </div>
+        
+                          <div class="swipeImg">
+                              <img class="Logo" src="img/information.png" alt="swipelogo">
+                          </div>
+        
+                          <div class="swipeLeft">
+                            <h1> &darr; swipe &rarr;</h1>
+                          </div>
+                      </div><!-------------wrapper----------------->
+                    </div><!------ slide end ------>
+                    <div class="swiper-slide"><!-------- v-slide 2 ----------->
+                      <div class="infoWrap">
+                          
+                          <div class="titleWrap">
+                              <p>credit to</p>
+                              <h1 class="colorTitle">P5.JS Website</h1>
+                             
+                          </div>
+                          <div class="textWrapend">
+                              <p>
+                                  All information used in this app was from the p5.js website, click the link to
+                                  go to the site. j5.js was created by lauren mccarthy
+                              </p>
+                                 
+                                     <div class="link">
+                                        <a href="https://p5js.org/" target="_blank">p5 website</a>
+                                     </div>
+                                     <div class="link">
+                                            <a href="http://lauren-mccarthy.com/" target="_blank">lauren site</a>
+                                         </div>
+                                     
+       
+                         </div><!---- text wrap ---->
+                    </div> <!---- info wrap ---->
+                    </div><!---- slider end ---->
+
+                    <div class="swiper-slide"><!-------- v-slide 3 ----------->
+                        <div class="infoWrap">
+                          
+                                <div class="titleWrap">
+                                    <p>credit to</p>
+                                    <h1 class="colorTitle">swiper</h1>
+                                   
+                                </div>
+                                <div class="textWrapend">
+                                    <p>
+                                        swiper was created by Vladimir Kharlampidi which was used in this app for 
+                                        the awesome touch sliding, all credit to him for making such a great framework.
+                                    </p>
+                                       
+                                           <div class="link">
+                                              <a href="http://idangero.us/swiper" target="_blank">website</a>
+                                           </div>
+                                           <div class="link">
+                                                <a href="https://twitter.com/nolimits4web" target="_blank">twitter </a>
+                                             </div>
+                                       
+             
+                               </div><!---- text wrap ---->
+                          </div> <!---- info wrap ---->
+                    
+        
+                    </div><!----- v-slide  end -------->
+
+
+                    <div class="swiper-slide"><!-------- v-slide 4 ----------->
+                      <div class="infoWrap">
+                          <div class="textWrap">
+                                
+                                 <h1>Syntax</h1> 
+                                 <span class="highlight">saturation</span>(color)
+                                 <h1>Parameters</h1> 
+                           <span class="underline"> color</span> <span class="highlight">p5.Color</span>|Number[]|String: p5.Color object, color components, or CSS color
+                                 <h1>Returns</h1> 
+                                  Number: the saturation value
+                          </div><!----text wrap---->
+          
+                      </div><!----info wrap---->
+                    
+        
+                    </div><!-----swiper slider end-------->
+                  </div><!-------slider wrapper end----------->
+                  <div class="swiper-pagination swiper-pagination-v"></div>
+                </div><!----swiper vertical end---->
+              </div><!---- saturation end---->
+    
+          
+        </div><!----------------swiper wrapper---------------------------->
+
+    <!-- Add Pagination -->
+    <div class="swiper-pagination swiper-pagination-h"></div>
+  </div><!---------------------swiper-container swiper-container-h-------------------------------------------->
+
+  <!-- Swiper JS -->
+  <script src="js/swiper.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script src="js/mainhav.js"></script>
+</body>
+</html>
