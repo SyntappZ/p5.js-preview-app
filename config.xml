@@ -4,10 +4,10 @@
     <description>
         just a preview app
     </description>
-    <author email="biscuitappz@gmail.com" href="#">
+    <author email="biscuitappz@gmail.com" href="biscuitappz@gmail.com">
         biscuitmanz
     </author>
     <content src="index.html" />
     <access origin="*" />
-    <icon src="icon.png">
+    <icon src="icon.png" />
 </widget>
