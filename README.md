@@ -1,14 +1,1 @@
-# A Blank PhoneGap App
-
-## Usage
-
-### PhoneGap CLI
-
-    $ phonegap create my-app --template blank
-
-### Desktop
-
-In your browser, open the file:
-
-    /www/index.html
-
+This is just one section of the p5.js reference color(), just a test to see how the swiper would work on the android apk. 
