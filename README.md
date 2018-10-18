@@ -3,7 +3,8 @@
 
 
 This is just one section of the p5.js reference color(), just a test to see how the swiper would work on an android apk.
-seems to work all good.
+This was made with html and css and also a framework called swiper to get the nice android swiping feel, it seems to work quite well although the 3d swiper box i used on a different app didnt work so well.
+Cordova was used to build the apk.
 
 # screenshots
 
